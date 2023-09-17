@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/css/dashboard-style.css">
+<div class="logout">
+    <form action="/account/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+</div>
+
+<div class="dashboard-container">
+    <h1 class="dashboard-title">Notes</h1>
+    <div class="note-container">
+
+        <%- notes %>
+
+    </div>
+
+    <form action="/note/create" method="get">
+        <button type="submit">Create New Note</button>
+    </form>
+
+    
+</div>

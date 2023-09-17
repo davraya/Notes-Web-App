@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container label,
+    .container input[type="text"],
+    .container input[type="password"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .container input[type="submit"],
+    .container p {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .container p {
+      text-align: center;
+    }
+
+    .container p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <h2>Sign Up</h2>
+        <form action="/account/register" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="account_username" required>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="account_password" required>
+
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="account_firstname" required>
+
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="account_lastname" required>
+    
+          <input type="submit" value="Register">
+        </form>
+  </div>
+</body>
+</html>

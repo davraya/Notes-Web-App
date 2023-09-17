@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit a Note</title>
+  <link rel="stylesheet" type="text/css" href="/css/create-note-style.css">
+</head>
+<body>
+  <div class="note-form">
+    <h2>Edit a Note</h2>
+    <form action="/note/update/<%- note_id %>" method="post">
+      <input type="text"  name="note_title" value="<%- note.note_title %>">
+      <textarea id="noteContent" rows="5" name="note_body"><%- note.note_body %></textarea>
+        <input type="submit" id="saveBtn" value="Save"></button>
+    </form>
+    <br><br>
+    <form action="/note/delete/<%- note_id %>" method="post">
+        <input type="submit" id="deleteBtn" value="Delete"></button>
+    </form>
+  </div>
+</body>
+</html>

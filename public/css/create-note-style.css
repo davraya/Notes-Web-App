@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.note-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the content horizontally */
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Increase the height to make the textarea bigger */
+textarea {
+  height: 200px;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0 5px; /* Add a margin between the buttons */
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#saveBtn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px;
+}
+
+#deleteBtn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+}
+
