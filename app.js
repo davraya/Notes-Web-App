@@ -8,7 +8,7 @@ const pgPool = require('./database/index')
 const flash = require('connect-flash');
 const cookieParser = require("cookie-parser");
 
-
+require('dotenv').config()
 
 
 
@@ -55,7 +55,7 @@ app.use(
 
 
 // health check
-app.get('/hc', ()=>{
+app.get('/hc', (req, res)=>{
   res.status(200).send('ok')
 })
 
