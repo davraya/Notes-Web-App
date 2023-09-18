@@ -53,6 +53,13 @@ app.use(
   }
 )
 
+
+// health check
+app.get('/hc', ()=>{
+  res.status(200).send('ok')
+})
+
+
 // index page
 app.get('/', function(req, res) {
     res.render('pages/login', {
