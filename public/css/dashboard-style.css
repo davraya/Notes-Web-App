@@ -51,12 +51,7 @@ body {
     border-radius: 4px;
   }
 
-  .logout{
-    position: fixed;
-    top: 5;
-    right: 5;
-    
-  }
+
 
   .logout button{
     background-color: red;
